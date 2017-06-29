@@ -93,6 +93,66 @@ var quest15 = [
 	"75th Ranger Division",
 	"United States 1st Army",
 	"101st Airborne Division"];
+var quest16 = [
+	"What was the name of the Moutain on Iwo Jima",
+	"Mount Suribachi",
+	"Mount Fuji",
+	"Mount Surugi",
+	"Mount Norikora"];
+var quest17 = [
+	"What was the name of Hitlers Hideout",
+	"Eagles Nest",
+	"Konigstuhle",
+	"Heidelberger",
+	"Krauserlautren"];
+var quest18 = [
+	"Which General commanded allied forces in Europe?",
+	"General Dwight Eisenhower",
+	"General George Patton",
+	"General Bernard Montgomery",
+	"General Mark Clark"];
+var quest19 = [
+	"In what month did WWII both begin and end?",
+	"September",
+	"October",
+	"November",
+	"December"];
+var quest20 = [
+	"What Event triggered Declarations of War on Germany from France and the United Kingdom?",
+	"Invasion of Poland",
+	"Annexation of Austria",
+	"Annexation of half of Czechoslovakia",
+	"Invasion of Belgium"];
+var quest21 = [
+	"What was the name of the bombing campaign agaisnt London?",
+	"The Blitz",
+	"The Terror",
+	"The Long Night",
+	"The Big Smoke"];
+var quest22 = [
+	"What was Adolf Hitlers title at the outbreak of Hostilities?"
+	"Chancellor",
+	"President",
+	"Supreme Ruler",
+	"Dictator"];
+var quest23 = [
+	"What was the codename for the first American operation in North Africa?",
+	"Operation Torch",
+	"Operation Villain",
+	"Operation Overlord",
+	"Operation Barbarossa"];
+var quest24 = [
+	"Which of these is not an American weapon?",
+	"Lee Enfield Rifle",
+	"Browning Automatic Rifle",
+	"M1 Garand",
+	"Thompson Submachine Gun"];
+var quest25 = [
+	"Which nations forces captured Berlin?",
+	"USSR",
+	"UK",
+	"USA",
+	"France"];
 
 var questionsArray = [quest1, quest2, quest3, quest4, quest5, quest6, quest7, quest8, quest9, quest10, quest11, quest12, quest13, quest14, quest15];
 
