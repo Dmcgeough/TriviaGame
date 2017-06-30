@@ -130,7 +130,7 @@ var quest21 = [
 	"The Long Night",
 	"The Big Smoke"];
 var quest22 = [
-	"What was Adolf Hitlers title at the outbreak of Hostilities?"
+	"What was Adolf Hitlers title at the outbreak of Hostilities?",
 	"Chancellor",
 	"President",
 	"Supreme Ruler",
@@ -153,15 +153,48 @@ var quest25 = [
 	"UK",
 	"USA",
 	"France"];
+var quest26 = [
+	"What was the name of the warriors code that led to the ferocity of fighting styles used by the Japanese?",
+	"Bushido",
+	"Bonzai",
+	"Shogunate",
+	"Hirohito"];
+var quest27 = [
+	"The most common weapon used by soldiers on any side was what?",
+	"Bolt Action Rifle",
+	"Machine Gun",
+	"Submachine Gun",
+	"Scoped Bolt Action Rifle"];
+var quest28 = [
+	"The attack on Pearl Harbor did not destory a single ship of this type?",
+	"Aircraft Carrier",
+	"Battleship",
+	"Destroyer",
+	"Tanker"];
+var quest29 = [
+	"This German city was nearly completely wiped out by Fire bombs dropped by the USAF and is referenced in Kurt Vonneguts book 'Slaughterhouse Five'",
+	"Dresden",
+	"Hamburg",
+	"Berlin",
+	"Heidelberg"];
+var quest30 = [
+	"The Highest award a service member could get from the USA was this medal",
+	"Medal of Honor",
+	"Gold Star",
+	"Croix de Guerre",
+	"Distinguished Service Cross"];
 
-var questionsArray = [quest1, quest2, quest3, quest4, quest5, quest6, quest7, quest8, quest9, quest10, quest11, quest12, quest13, quest14, quest15];
-
+var questionsArray = [quest1, quest2, quest3, quest4, quest5, quest6, quest7, quest8, quest9, quest10, quest11, quest12, quest13, quest14, quest15, quest16, quest17, quest18, quest19, quest20, quest21, quest22, quest23, quest24, quest25, quest26, quest27, quest28, quest29, quest30];
 
 var randomValue = Math.floor(Math.random() * questionsArray.length);
 
 var pickedQuestion = questionsArray[randomValue];
 
 var rightAnswer = 0;
+
+var correct = 0;
+
+var delayNewQuestion;
 
 $(document).ready(function() {
     $(".answer1").val(1);
@@ -200,9 +233,25 @@ $(document).ready(function() {
 	$(".answer").on("click", function() {
 	        if(parseInt($(this).val()) === rightAnswer) {
 	            $(this).html("<h1>Correct!</h1>");
+	            correct ++;
+	            $(".correct").html(correct);
+
+	       
 	    	} else {
 	            $(this).html("<h1>Incorrect!</h1>");
-	        }
+			}
+			
+			randomValue = Math.floor(Math.random() * questionsArray.length);
+
+			pickedQuestion = questionsArray[randomValue];
+
+			setTimeout(function() {
+				
+			}, 3000);
+			}
+			
+			newQuestion();
 	    });
 	newQuestion();
+	
 });
