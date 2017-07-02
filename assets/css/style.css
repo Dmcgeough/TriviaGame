@@ -1,16 +1,16 @@
 body { 
-  background: url(https://upload.wikimedia.org/wikipedia/commons/9/96/Approaching_Omaha.jpg) no-repeat center center fixed; 
+  background: url(https://s-media-cache-ak0.pinimg.com/originals/b8/0c/30/b80c306ba3b6ff78d9a19da130fb0aef.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 h1, h2, h3, h4, h5, h6 {
-	color:red;
-	font-size: 24px;
+	color:#0400ff;
+	font-size: 28px;
 }
-.Start
+.start
 {
 	width:10%;
-	height: 5%;
+	height: 20px;
 }
